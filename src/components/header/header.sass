@@ -2,7 +2,6 @@ $headerheight: 5rem
 
 .header-container
   width: 100%
-  height: $headerheight
 
 .header-fullwidth
   position: fixed
@@ -10,7 +9,6 @@ $headerheight: 5rem
   left: 0
   box-shadow: $shadow
   width: 100%
-  height: $headerheight
   background: white
   z-index: 10
 
@@ -21,12 +19,15 @@ $headerheight: 5rem
   margin: 0 auto
   height: 100%
   position: relative
+  flex-flow: row wrap
 
   .logo-container
     display: flex
     flex-direction: row
     align-items: center
     cursor: pointer
+    flex: 1
+    flex-flow: row wrap
 
     .logo-img
       height: $headerheight
@@ -36,12 +37,15 @@ $headerheight: 5rem
       color: $highlightred
       font-weight: lighter
       white-space: nowrap
+      text-align: center
+      flex: 1
+      line-height: $headerheight
 
   .header-nav-contact
     display: flex
     align-items: center
     cursor: pointer
-    padding: 0 0.5rem
+    padding: 1rem 0.5rem
     h3
       background: $highlightred
       font-size: 1rem
@@ -54,5 +58,5 @@ $headerheight: 5rem
   .header-menu-desktop
     display: flex
     flex-direction: row
-    flex: 1
+    flex: 0
     justify-content: flex-end
