@@ -1,4 +1,4 @@
-# Infinite Airhorn nonsense
+# Sparkle Donkey Nonsense
 
 #####Gatsby and React
 
@@ -28,10 +28,10 @@ get auth file and put in auth/ directory in root
 
 staging  
 `npm run deployStaging`
-staging.infiniteairhorn.com
+staging.sparkledonkeyvillage.com
 
 production  
 `npm run deployProd`
-www.infiniteairhorn.com
+www.sparkledonkeyvillage.com
 
 ---
