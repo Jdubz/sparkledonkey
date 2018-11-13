@@ -1,0 +1,63 @@
+.landing-container
+  width: 100%
+  flex: 1
+  background: $skyblue
+
+  .landing-content
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    height: 100%
+    cursor: pointer
+    overflow: hidden
+    @media (min-width: $desktop)
+      padding-top: 3rem
+
+    .landing-copy
+      display: flex
+      align-items: center
+      justify-content: center
+      max-width: 40rem
+      height: 20rem
+      h3
+        line-height: 2.5rem
+        width: 50%
+        font-weight: normal
+
+    .landing-subcopy
+      display: flex
+      align-items: flex-end
+      justify-content: center
+      max-width: 12rem
+      p
+        width: 65%
+        line-height: 1.2rem
+        padding: 2.5rem 0
+
+    .landing-image
+      max-width: 30rem
+      img
+        width: 100%
+
+  .landing-divider
+    width: 100%
+    position: relative
+    height: 25vw
+    display: flex
+    align-items: flex-end
+    .slant
+      position: absolute
+      z-index: 0
+      bottom: 4.9vw
+      width: 102%
+    .tree
+      position: absolute
+      z-index: 1
+      width: 102%
+      bottom: -3vw
+    .landing-divider-spacer
+      background: $lightgreen
+      height: 5vw
+      width: 100%

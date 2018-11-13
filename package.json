@@ -1,0 +1,44 @@
+{
+  "name": "sparkledonkeyvillage",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Sparkle Donkey Village Website",
+  "scripts": {
+    "start": "gatsby develop",
+    "buildStaging": "env GATSBY_ENV=staging gatsby build",
+    "buildProd": "env GATSBY_ENV=production gatsby build",
+    "uploadStaging": "./deploy.sh staging",
+    "uploadProd": "./deploy.sh production",
+    "deployStaging": "npm run buildStaging && npm run uploadStaging",
+    "deployProd": "npm run buildProd && npm run uploadProd"
+  },
+  "repository": "https://github.com/Jdubz/sparkledonkey.git",
+  "keywords": [],
+  "author": "Josh Wentworth",
+  "dependencies": {
+    "gatsby": "^1.9.277",
+    "gatsby-link": "^1.6.46",
+    "gatsby-plugin-google-analytics": "^1.0.31",
+    "gatsby-plugin-google-tagmanager": "^1.0.19",
+    "gatsby-plugin-page-creator": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-robots-txt": "^1.2.0",
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-plugin-sitemap": "^1.2.25",
+    "normalize.css": "^8.0.0",
+    "react": "^16.4.1",
+    "react-click-outside": "^3.0.1",
+    "react-dom": "^16.4.1",
+    "react-helmet": "^5.2.0",
+    "react-scroll": "^1.7.10",
+    "react-sizeme": "^2.5.2",
+    "react-sound": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-config-gatsby-standard": "^1.2.2",
+    "eslint-loader": "^2.1.0",
+    "gatsby-plugin-eslint": "^1.0.3",
+    "gatsby-plugin-remove-trailing-slashes": "^1.0.9"
+  }
+}

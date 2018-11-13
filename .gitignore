@@ -1,0 +1,12 @@
+node_modules/
+package-lock.json
+yarn.lock
+
+auth/*
+public/*
+.cache/
+
+.idea/
+.DS_Store
+
+

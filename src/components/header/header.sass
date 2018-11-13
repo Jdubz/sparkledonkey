@@ -1,0 +1,58 @@
+$headerheight: 5rem
+
+.header-container
+  width: 100%
+  height: $headerheight
+
+.header-fullwidth
+  position: fixed
+  top: 0
+  left: 0
+  box-shadow: $shadow
+  width: 100%
+  height: $headerheight
+  background: white
+  z-index: 10
+
+.header-content
+  display: flex
+  flex-direction: row
+  max-width: $desktop
+  margin: 0 auto
+  height: 100%
+  position: relative
+
+  .logo-container
+    display: flex
+    flex-direction: row
+    align-items: center
+    cursor: pointer
+
+    .logo-img
+      height: $headerheight
+      width: $headerheight
+    .logo-text
+      font-family: Pacifico, cursive
+      color: $highlightred
+      font-weight: lighter
+      white-space: nowrap
+
+  .header-nav-contact
+    display: flex
+    align-items: center
+    cursor: pointer
+    padding: 0 0.5rem
+    h3
+      background: $highlightred
+      font-size: 1rem
+      color: white
+      padding: 0.3rem 1rem
+      border-radius: 1.3rem
+      white-space: nowrap
+      @extend .hover-lift
+
+  .header-menu-desktop
+    display: flex
+    flex-direction: row
+    flex: 1
+    justify-content: flex-end
