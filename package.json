@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gatsby develop",
     "buildStaging": "env GATSBY_ENV=staging gatsby build",
-    "buildProd": "env GATSBY_ENV=production gatsby build",
+    "buildProd": "env GATSBY_ENV=production gatsby build",  
     "uploadStaging": "./deploy.sh staging",
     "uploadProd": "./deploy.sh production",
     "deployStaging": "npm run buildStaging && npm run uploadStaging",
