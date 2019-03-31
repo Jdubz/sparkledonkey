@@ -1,10 +1,10 @@
 # Sparkle Donkey Nonsense
 
-#####Gatsby and React
+##### Gatsby and React
 
 ---
 
-###To start development, from root folder:
+### To start development, from root folder:
 
 
 `npm i -g gatsby-cli`  
@@ -14,14 +14,14 @@ localhost:8000
 
 ---
 
-###To generated production code:
+### To generated production code:
 
 `gatsby build`  
 this runs during the deploy script 
 
 ---
 
-###To deploy:
+### To deploy:
 
 install google cloud sdk  
 get auth file and put in auth/ directory in root
