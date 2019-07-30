@@ -5,15 +5,43 @@
 
   .landing-content
     display: flex
-    flex-direction: row
+    flex-direction: column
     flex-wrap: wrap
     justify-content: center
     align-items: center
     height: 100%
-    cursor: pointer
     overflow: hidden
     @media (min-width: $desktop)
       padding-top: 3rem
 
     img
       max-width: 100%
+    h1
+      margin: 20px
+    h2
+      margin: 20px
+
+  .landing-button
+    display: flex
+    align-items: center
+    padding: 1rem 0.5rem
+    button
+      background: $highlightred
+      font-size: 1.5rem
+      color: white
+      padding: 0.3rem 1rem
+      border-radius: 1.3rem
+      white-space: nowrap
+      @extend .hover-lift
+  .landing-button-info
+    display: flex
+    align-items: center
+    padding: 1rem 0.5rem
+    button
+      background: $highlightblue
+      font-size: 1.5rem
+      color: white
+      padding: 0.3rem 1rem
+      border-radius: 1.3rem
+      white-space: nowrap
+      @extend .hover-lift

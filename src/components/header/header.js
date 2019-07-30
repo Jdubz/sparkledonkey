@@ -1,45 +1,40 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react";
+import Link from "gatsby-link";
 
-import logo from '../../assets/logo.png'
+import logo from "../../assets/logo.png";
 
 class Header extends React.Component {
   render() {
     const { location } = this.props;
     return (
-      <div className={'header-container'} >
-        <div className={'header-fullwidth'}>
-          <div className={'header-content'}>
+      <div className={"header-container"}>
+        <div className={"header-fullwidth"}>
+          <div className={"header-content"}>
             {(() => {
-              if (location === '/') {
+              if (location === "/") {
                 return (
-                  <div
-                    className={'logo-container'}
-                  >
-                    <img className={'logo-img'} src={logo}/>
-                    <h1 className={'logo-text'}>Sparkle Donkey Village</h1>
+                  <div className={"logo-container"}>
+                    <img className={"logo-img"} src={logo} />
+                    <h1 className={"logo-text"}>Sparkle Donkey Village</h1>
                   </div>
-                )
+                );
               }
               return (
-                <Link to={'/'} className={'logo-container'}>
-                  <img className={'logo-img'} src={logo}/>
-                  <h1 className={'logo-text'}>Sparkle Donkey VIllage</h1>
+                <Link to={"/"} className={"logo-container"}>
+                  <img className={"logo-img"} src={logo} />
+                  <h1 className={"logo-text"}>Sparkle Donkey Village</h1>
                 </Link>
-              )
+              );
             })()}
-            <div className={'header-menu-desktop'}>
-              <Link
-                className={'header-nav-contact'}
-                to={'/contact/'}
-              >
+            <div className={"header-menu-desktop"}>
+              <Link className={"header-nav-contact"} to={"/contact/"}>
                 <h3>Contact Us</h3>
               </Link>
             </div>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
